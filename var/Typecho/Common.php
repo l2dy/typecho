@@ -328,6 +328,7 @@ class Typecho_Common
         /** 设置http code */
         if (is_numeric($code) && $code > 200) {
             Typecho_Response::setStatus($code);
+            Typecho_Response::setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
         }
 
         $message = nl2br($message);

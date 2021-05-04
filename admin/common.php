@@ -8,6 +8,7 @@ define('__TYPECHO_ADMIN__', true);
 /** 载入配置文件 */
 if (!defined('__TYPECHO_ROOT_DIR__') && !@include_once __DIR__ . '/../config.inc.php') {
     file_exists(__DIR__ . '/../install.php') ? header('Location: ../install.php') : print('Missing Config File');
+    header('Cache-Control: no-cache, no-store, must-revalidate');
     exit;
 }
 

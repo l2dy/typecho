@@ -288,6 +288,7 @@ class Typecho_Response
         } else {
             self::callback();
             header('Location: ' . $location, false, 302);
+            header('Cache-Control: no-cache, no-store, must-revalidate');
             exit;
         }
     }
