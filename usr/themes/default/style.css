@@ -36,7 +36,7 @@ pre {
   max-height: 400px;
 }
 pre code {
-  padding: 3px;
+  padding: 0;
   color: #444;
 }
 
