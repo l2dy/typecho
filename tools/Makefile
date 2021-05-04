@@ -12,8 +12,6 @@ update:
 	rm -Rf build/.github
 	rm -f build/.gitignore
 	rm -f build/.gitattributes
-	for i in `find build/ -name '*.css'`; do echo $$i && java -Xmx32m -jar yuicompressor-2.4.2.jar $$i --charset UTF-8 -o $$i; done;
-	for i in `find build/admin/js/ -name '*.js'`; do echo $$i && java -Xmx32m -jar yuicompressor-2.4.2.jar $$i --charset UTF-8 -o $$i; done;
 	for i in `find build/ -name '*.php'`; do php -l $$i; done;
 
 
