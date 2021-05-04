@@ -2080,6 +2080,7 @@ class Widget_XmlRpc extends Widget_Abstract_Contents implements Widget_Interface
                 $post->cid, $source, 'comment'))->num;
 
                 if ($pingNum <= 0) {
+                    return new IXR_Error(49, _t('目标地址禁止Ping'));
                     /** 检查源地址是否存在*/
                     if (!($http = Typecho_Http_Client::get())) {
                         return new IXR_Error(16, _t('源地址服务器错误'));

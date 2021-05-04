@@ -40,6 +40,8 @@ class Widget_Ajax extends Widget_Abstract_Options implements Widget_Interface_Do
     public function checkVersion()
     {
         $this->user->pass('editor');
+        $this->response->throwJson(array());
+        return;
         $client = Typecho_Http_Client::get();
         if ($client) {
             $client->setHeader('User-Agent', $this->options->generator)
@@ -89,6 +91,8 @@ class Widget_Ajax extends Widget_Abstract_Options implements Widget_Interface_Do
     public function feed()
     {
         $this->user->pass('subscriber');
+        $this->response->throwJson(array());
+        return;
         $client = Typecho_Http_Client::get();
         if ($client) {
             $client->setHeader('User-Agent', $this->options->generator)

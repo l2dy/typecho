@@ -90,7 +90,7 @@ class Widget_Contents_Page_Edit extends Widget_Contents_Post_Edit implements Wid
             $this->pluginHandle()->finishPublish($contents, $this);
 
             /** 发送ping */
-            $this->widget('Widget_Service')->sendPing($this->cid);
+            // $this->widget('Widget_Service')->sendPing($this->cid);
 
             /** 设置提示信息 */
             $this->widget('Widget_Notice')->set(_t('页面 "<a href="%s">%s</a>" 已经发布', $this->permalink, $this->title), 'success');
