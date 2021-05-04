@@ -65,7 +65,7 @@ class Widget_Security extends Typecho_Widget
 
         // 验证入口文件
         $indexFile = __TYPECHO_ROOT_DIR__ . '/index.php';
-        if (md5_file($indexFile) != 'f4dae7ceb7002cf4f95d380f5ced906b') {
+        if (md5_file($indexFile) != '681aea3a510924b06fbf8ac2b1fff923') {
             $errors[] = _t('当前网站的入口文件 <strong>%s</strong> 与最新版中的不一致, 请更新', $indexFile);
         }
 
