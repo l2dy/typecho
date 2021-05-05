@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('normalize.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('prism.css'); ?>">
+    <script defer src="<?php $this->options->themeUrl('prism.js'); ?>"></script>
     <script defer src="<?php $this->options->themeUrl('instantpage-5.1.0.js'); ?>"></script>
 
     <!--[if lt IE 9]>
